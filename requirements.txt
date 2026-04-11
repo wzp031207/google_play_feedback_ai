@@ -1,0 +1,9 @@
+pandas>=2.2.0
+numpy>=1.26.0
+scikit-learn>=1.5.0
+pyarrow>=17.0.0
+plotly>=5.24.0
+streamlit>=1.38.0
+python-dotenv>=1.0.1
+openai>=1.40.0
+vaderSentiment>=3.3.2
