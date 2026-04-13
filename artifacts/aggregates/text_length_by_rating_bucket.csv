@@ -1,0 +1,4 @@
+﻿rating_bucket,average_text_length,median_text_length,average_word_count,review_count
+高分(4-5星),166.85,126.0,31.8,458318
+低分(1-2星),229.24,202.0,43.38,410839
+中性(3星),196.55,160.0,37.61,180527

@@ -1,0 +1,2 @@
+﻿status,message
+unavailable,当前数据不包含版本号字段，已跳过版本维度评分变化分析。

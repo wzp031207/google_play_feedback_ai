@@ -3,8 +3,5 @@ __pycache__/
 
 .idea/
 
-data/raw/
-artifacts/
-
 streamlit_*.log
 *.log

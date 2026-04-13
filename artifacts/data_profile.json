@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-04-11T17:39:41.476660+00:00",
+  "project_name": "基于数据分析与 LLM 的 Google Play 用户反馈洞察及运营建议助手",
+  "raw_sources": [
+    {
+      "source_key": "apps",
+      "entity_type": "app",
+      "info_rows": 217,
+      "review_rows": 466700
+    },
+    {
+      "source_key": "games",
+      "entity_type": "game",
+      "info_rows": 335,
+      "review_rows": 583170
+    }
+  ],
+  "total_rows_after_merge": 1049870,
+  "analysis_rows": 1049684,
+  "duplicate_reviews_removed": 186,
+  "date_range": {
+    "min": "2010-04-25",
+    "max": "2025-04-22"
+  },
+  "entity_type_distribution": {
+    "game": 583094,
+    "app": 466590
+  },
+  "rating_distribution": {
+    "1": 239086,
+    "2": 171753,
+    "3": 180527,
+    "4": 203561,
+    "5": 254757
+  },
+  "missing_ratio": {
+    "item_id": 0.0,
+    "review_text": 0.0,
+    "review_score": 0.0,
+    "review_date": 0.0,
+    "helpful_count": 0.0,
+    "title": 0.0,
+    "description": 0.0,
+    "store_score": 0.0,
+    "ratings_count": 0.0,
+    "downloads": 0.0,
+    "content_rating": 0.0,
+    "section": 0.0,
+    "categories": 0.0,
+    "entity_type": 0.0,
+    "source_key": 0.0,
+    "review_text_clean": 0.0,
+    "review_text_length": 0.0,
+    "review_word_count": 0.0,
+    "is_empty_review": 0.0,
+    "updated_at": 1.0,
+    "primary_category": 0.0,
+    "country": 0.0,
+    "language": 0.0,
+    "review_language": 0.0,
+    "review_country": 0.0,
+    "is_abnormal_text": 0.0,
+    "rating_bucket": 0.0,
+    "rating_sentiment": 0.0,
+    "is_low_score": 0.0,
+    "is_high_score": 0.0,
+    "review_month": 0.0,
+    "review_week": 0.0,
+    "review_day": 0.0,
+    "text_sentiment_score": 0.0,
+    "text_sentiment_label": 0.0,
+    "sentiment_mismatch_flag": 0.0,
+    "is_duplicate_review": 0.0,
+    "review_id": 0.0
+  },
+  "empty_review_ratio": 0.0014,
+  "abnormal_text_ratio": 0.0048,
+  "text_sentiment_available": true,
+  "available_field_mapping": {
+    "评论文本": [
+      "apps_reviews.csv:review_text",
+      "games_reviews.csv:review_text"
+    ],
+    "星级评分": [
+      "apps_info.csv:score",
+      "apps_reviews.csv:review_score",
+      "games_info.csv:score",
+      "games_reviews.csv:review_score"
+    ],
+    "评论时间": [
+      "apps_reviews.csv:review_date",
+      "games_reviews.csv:review_date"
+    ],
+    "应用或游戏标题": [
+      "apps_info.csv:app_name",
+      "games_info.csv:game_name"
+    ],
+    "分类字段": [
+      "apps_info.csv:categories",
+      "games_info.csv:categories"
+    ],
+    "版本号": [],
+    "国家字段": [],
+    "语言字段": [],
+    "安装量": [
+      "apps_info.csv:downloads",
+      "games_info.csv:downloads"
+    ],
+    "开发者": [],
+    "更新时间": [],
+    "价格": [],
+    "内容分级": [
+      "apps_info.csv:content_rating",
+      "games_info.csv:content_rating"
+    ]
+  },
+  "unsupported_expected_fields": {
+    "version": true,
+    "country": true,
+    "language": true,
+    "developer": true,
+    "updated_at": true,
+    "price": true
+  },
+  "adaptation_notes": [
+    "当前数据包含应用和游戏两类实体，已统一映射为 title / primary_category / entity_type 分析口径。",
+    "当前数据未提供版本号，因此版本维度分析会输出空结果并在应用中提示字段缺失。",
+    "当前数据未提供国家和语言字段，项目默认按全量评论做统一口径分析。"
+  ],
+  "key_columns": [
+    "review_id",
+    "entity_type",
+    "item_id",
+    "title",
+    "primary_category",
+    "review_text",
+    "review_score",
+    "review_date",
+    "helpful_count",
+    "downloads",
+    "ratings_count",
+    "text_sentiment_label"
+  ]
+}

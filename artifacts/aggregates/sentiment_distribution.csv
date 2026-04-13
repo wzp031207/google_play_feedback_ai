@@ -1,0 +1,10 @@
+﻿rating_sentiment,text_sentiment_label,review_count,share
+positive,positive,384306,0.3661
+negative,negative,169608,0.1616
+negative,positive,148491,0.1415
+neutral,positive,99844,0.0951
+negative,neutral,92740,0.0884
+positive,neutral,43989,0.0419
+neutral,negative,41886,0.0399
+neutral,neutral,38797,0.037
+positive,negative,30023,0.0286

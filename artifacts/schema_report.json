@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-04-11T17:33:32.607998+00:00",
+  "raw_dir": "data\\raw",
+  "files": [
+    {
+      "file_name": "apps_info.csv",
+      "relative_path": "apps_info.csv",
+      "role": "info",
+      "entity_type": "app",
+      "source_key": "apps",
+      "row_count": 217,
+      "column_count": 9,
+      "columns": [
+        "app_id",
+        "app_name",
+        "description",
+        "score",
+        "ratings_count",
+        "downloads",
+        "content_rating",
+        "section",
+        "categories"
+      ],
+      "dtypes": {
+        "app_id": "int64",
+        "app_name": "str",
+        "description": "str",
+        "score": "float64",
+        "ratings_count": "int64",
+        "downloads": "int64",
+        "content_rating": "str",
+        "section": "str",
+        "categories": "str"
+      },
+      "field_map": {
+        "entity_id": "app_id",
+        "title": "app_name",
+        "description": "description",
+        "store_score": "score",
+        "ratings_count": "ratings_count",
+        "downloads": "downloads",
+        "content_rating": "content_rating",
+        "section": "section",
+        "categories": "categories",
+        "review_text": null,
+        "review_score": "score",
+        "review_date": null,
+        "helpful_count": null,
+        "version": null,
+        "country": null,
+        "language": null,
+        "price": null,
+        "developer": null,
+        "updated_at": null
+      },
+      "sample_rows": [
+        {
+          "app_id": "1",
+          "app_name": "Western Union Send Money Now",
+          "description": "Enjoy a $0 transfer fee* on your next online international money transfer with Western Union®. Send money fast & safely to Mexico or globally from the US, available 24/7.Western Union lets you send money to loved ones with ease, reliability",
+          "score": "4.6",
+          "ratings_count": "317000",
+          "downloads": "10000000",
+          "content_rating": "Everyone",
+          "section": "Budgeting tools",
+          "categories": "Finance"
+        },
+        {
+          "app_id": "2",
+          "app_name": "Priceline: Hotel, Flight & Car",
+          "description": "Save on your next trip with exclusive deals on hotels, flights & rental cars in the Priceline app. From cheap flights to amazing hotel room offers, you’re guaranteed to find deals you won’t want to miss.Vacation vibes or business trip? 5-st",
+          "score": "4.7",
+          "ratings_count": "502000",
+          "downloads": "10000000",
+          "content_rating": "Everyone",
+          "section": "Business tools",
+          "categories": "Travel & Local"
+        },
+        {
+          "app_id": "3",
+          "app_name": "Slack",
+          "description": "Slack brings team communication and collaboration into one place so you can get more work done, whether you belong to a large enterprise or a small business. Check off your to-do list and move your projects forward by bringing the right peo",
+          "score": "3.4",
+          "ratings_count": "134000",
+          "downloads": "10000000",
+          "content_rating": "Everyone",
+          "section": "Business tools",
+          "categories": "Business"
+        }
+      ]
+    },
+    {
+      "file_name": "apps_reviews.csv",
+      "relative_path": "apps_reviews.csv",
+      "role": "reviews",
+      "entity_type": "app",
+      "source_key": "apps",
+      "row_count": 466700,
+      "column_count": 5,
+      "columns": [
+        "app_id",
+        "review_text",
+        "review_score",
+        "review_date",
+        "helpful_count"
+      ],
+      "dtypes": {
+        "app_id": "int64",
+        "review_text": "str",
+        "review_score": "int64",
+        "review_date": "str",
+        "helpful_count": "int64"
+      },
+      "field_map": {
+        "entity_id": "app_id",
+        "title": null,
+        "description": null,
+        "store_score": null,
+        "ratings_count": null,
+        "downloads": null,
+        "content_rating": null,
+        "section": null,
+        "categories": null,
+        "review_text": "review_text",
+        "review_score": "review_score",
+        "review_date": "review_date",
+        "helpful_count": "helpful_count",
+        "version": null,
+        "country": null,
+        "language": null,
+        "price": null,
+        "developer": null,
+        "updated_at": null
+      },
+      "sample_rows": [
+        {
+          "app_id": "1",
+          "review_text": "I don't know what happened to this app. It was super on point up until a year or so ago. Can't do quick resend of money unless I go back to ones I did in early 2024. Finally got my points when they \"fixed\" it. Went from 110 to 1290 that's h",
+          "review_score": "1",
+          "review_date": "2025-04-03",
+          "helpful_count": "6"
+        },
+        {
+          "app_id": "1",
+          "review_text": "app was good. then the randomly locked my account a couple days ago demanding a lot of personal information about myself and the people I am sending money too and my relationship with them, as well as my banking information and where my mon",
+          "review_score": "1",
+          "review_date": "2025-04-13",
+          "helpful_count": "3"
+        },
+        {
+          "app_id": "1",
+          "review_text": "Terrible user interface 🤬 Menus cluttered. App display is garbled and/or disappears if I temporarily switch to another app to copy & paste my bank account number. It won't let me paste! If I multitask and switch to another app, WU disappear",
+          "review_score": "1",
+          "review_date": "2025-03-17",
+          "helpful_count": "48"
+        }
+      ]
+    },
+    {
+      "file_name": "games_info.csv",
+      "relative_path": "games_info.csv",
+      "role": "info",
+      "entity_type": "game",
+      "source_key": "games",
+      "row_count": 335,
+      "column_count": 9,
+      "columns": [
+        "game_id",
+        "game_name",
+        "description",
+        "score",
+        "ratings_count",
+        "downloads",
+        "content_rating",
+        "section",
+        "categories"
+      ],
+      "dtypes": {
+        "game_id": "int64",
+        "game_name": "str",
+        "description": "str",
+        "score": "float64",
+        "ratings_count": "int64",
+        "downloads": "int64",
+        "content_rating": "str",
+        "section": "str",
+        "categories": "str"
+      },
+      "field_map": {
+        "entity_id": "game_id",
+        "title": "game_name",
+        "description": "description",
+        "store_score": "score",
+        "ratings_count": "ratings_count",
+        "downloads": "downloads",
+        "content_rating": "content_rating",
+        "section": "section",
+        "categories": "categories",
+        "review_text": null,
+        "review_score": "score",
+        "review_date": null,
+        "helpful_count": null,
+        "version": null,
+        "country": null,
+        "language": null,
+        "price": null,
+        "developer": null,
+        "updated_at": null
+      },
+      "sample_rows": [
+        {
+          "game_id": "1",
+          "game_name": "Geometry Dash SubZero",
+          "description": "Geometry Dash is back with a brand new adventure!Jump in, brace yourself, and get ready for a real challenge! This won't be easy...Game Features• Rhythm-based Action Platforming!• Three unique levels with amazing music from MDK, Bossfight a",
+          "score": "4.5",
+          "ratings_count": "926000",
+          "downloads": "100000000",
+          "content_rating": "Everyone",
+          "section": "Abstract graphics",
+          "categories": "Action, Platformer, Runner, Arcade, Single player, Abstract, Offline"
+        },
+        {
+          "game_id": "2",
+          "game_name": "Word Collect - Word Games Fun",
+          "description": "Download the best word games Free in Word Collect!Word Collect has exciting word games Free Word Nerds! Word Collect starts as an easy word game and gets harder as you level up!=== Enjoy Word Gameplay! ===- Connect letters in any direction ",
+          "score": "4.7",
+          "ratings_count": "588000",
+          "downloads": "10000000",
+          "content_rating": "Everyone",
+          "section": "Abstract graphics",
+          "categories": "#10 top grossing word, Word, Search, Single player, Abstract, Offline"
+        },
+        {
+          "game_id": "3",
+          "game_name": "Tap Away",
+          "description": "Do you have what it takes to solve all the swiping levels? Connect all your braincells and put your skills to the test! Tap Away all the blocks in this exciting puzzle.Tap Away is brought to you by Popcore, makers of hit puzzle games with m",
+          "score": "4.3",
+          "ratings_count": "1130000",
+          "downloads": "50000000",
+          "content_rating": "Everyone",
+          "section": "Abstract graphics",
+          "categories": "Puzzle, Logic, Casual, Single player, Abstract, Miscellaneous, Offline"
+        }
+      ]
+    },
+    {
+      "file_name": "games_reviews.csv",
+      "relative_path": "games_reviews.csv",
+      "role": "reviews",
+      "entity_type": "game",
+      "source_key": "games",
+      "row_count": 583170,
+      "column_count": 5,
+      "columns": [
+        "game_id",
+        "review_text",
+        "review_score",
+        "review_date",
+        "helpful_count"
+      ],
+      "dtypes": {
+        "game_id": "int64",
+        "review_text": "str",
+        "review_score": "int64",
+        "review_date": "str",
+        "helpful_count": "int64"
+      },
+      "field_map": {
+        "entity_id": "game_id",
+        "title": null,
+        "description": null,
+        "store_score": null,
+        "ratings_count": null,
+        "downloads": null,
+        "content_rating": null,
+        "section": null,
+        "categories": null,
+        "review_text": "review_text",
+        "review_score": "review_score",
+        "review_date": "review_date",
+        "helpful_count": "helpful_count",
+        "version": null,
+        "country": null,
+        "language": null,
+        "price": null,
+        "developer": null,
+        "updated_at": null
+      },
+      "sample_rows": [
+        {
+          "game_id": "1",
+          "review_text": "too many ads for a game where you die a lot, getting an ad every 5 attempts is diabolical I just pirated the full version because of this it's a fun game but the ads ruin it",
+          "review_score": "1",
+          "review_date": "2025-04-13",
+          "helpful_count": "2"
+        },
+        {
+          "game_id": "1",
+          "review_text": "I really love this game and its music. But at some point,it all starts freezing, and my cube can't jump even after I tap. And sometimes it's annoying because I recall there are many times when i was about to hit 100% and it wouldnt jump or ",
+          "review_score": "1",
+          "review_date": "2023-07-28",
+          "helpful_count": "3963"
+        },
+        {
+          "game_id": "1",
+          "review_text": "The app is cool in general. BUT this is meant to be the presentation of the geometry dash. And it's extremly annoying, to have popup ads everyfew rounds in a game that not ment to be a full game, just a kind of demo. If the ads removed, it'",
+          "review_score": "1",
+          "review_date": "2024-11-04",
+          "helpful_count": "24"
+        }
+      ]
+    }
+  ],
+  "field_availability": {
+    "entity_id": [
+      "apps_info.csv:app_id",
+      "apps_reviews.csv:app_id",
+      "games_info.csv:game_id",
+      "games_reviews.csv:game_id"
+    ],
+    "title": [
+      "apps_info.csv:app_name",
+      "games_info.csv:game_name"
+    ],
+    "description": [
+      "apps_info.csv:description",
+      "games_info.csv:description"
+    ],
+    "store_score": [
+      "apps_info.csv:score",
+      "games_info.csv:score"
+    ],
+    "ratings_count": [
+      "apps_info.csv:ratings_count",
+      "games_info.csv:ratings_count"
+    ],
+    "downloads": [
+      "apps_info.csv:downloads",
+      "games_info.csv:downloads"
+    ],
+    "content_rating": [
+      "apps_info.csv:content_rating",
+      "games_info.csv:content_rating"
+    ],
+    "section": [
+      "apps_info.csv:section",
+      "games_info.csv:section"
+    ],
+    "categories": [
+      "apps_info.csv:categories",
+      "games_info.csv:categories"
+    ],
+    "review_text": [
+      "apps_reviews.csv:review_text",
+      "games_reviews.csv:review_text"
+    ],
+    "review_score": [
+      "apps_info.csv:score",
+      "apps_reviews.csv:review_score",
+      "games_info.csv:score",
+      "games_reviews.csv:review_score"
+    ],
+    "review_date": [
+      "apps_reviews.csv:review_date",
+      "games_reviews.csv:review_date"
+    ],
+    "helpful_count": [
+      "apps_reviews.csv:helpful_count",
+      "games_reviews.csv:helpful_count"
+    ],
+    "version": [],
+    "country": [],
+    "language": [],
+    "price": [],
+    "developer": [],
+    "updated_at": []
+  }
+}
